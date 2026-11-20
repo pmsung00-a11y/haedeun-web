@@ -111,19 +111,22 @@
     .section-title h2 { font-size: 2rem; font-weight: 900; color: var(--navy-deep); letter-spacing: -0.5px; }
     .section-title p { color: var(--text-gray); margin-top: 10px; font-size: 1rem; }
 
-    /* 주간지 전자책 슬라이드 뷰어 섹션 */
+    /* 주간지 주차별 아카이브 슬라이드 뷰어 섹션 */
     .weekly-sec { background: var(--bg-light); border-bottom: 1px solid #e2e8f0; }
     .viewer-wrapper {
       max-width: 680px; margin: 0 auto; background: #fff; border-radius: 16px;
       padding: 24px; box-shadow: 0 12px 35px rgba(11, 25, 46, 0.1); border: 1px solid #cbd5e1;
     }
     .viewer-header {
-      display: flex; justify-content: space-between; align-items: center;
-      margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid #e2e8f0;
+      display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
+      margin-bottom: 16px; padding-bottom: 14px; border-bottom: 1px solid #e2e8f0;
     }
-    .issue-badge {
-      background: var(--navy-deep); color: #fff; font-size: 0.82rem; font-weight: 700;
-      padding: 5px 12px; border-radius: 6px;
+    .issue-select-wrap { display: flex; align-items: center; gap: 8px; }
+    .issue-select-wrap label { font-size: 0.84rem; font-weight: 800; color: var(--navy-deep); white-space: nowrap; }
+    .issue-select {
+      padding: 7px 12px; border-radius: 8px; border: 2px solid var(--royal-blue);
+      background: #eff6ff; color: var(--navy-deep); font-family: inherit;
+      font-size: 0.9rem; font-weight: 800; cursor: pointer; outline: none;
     }
     .page-indicator { font-weight: 800; color: var(--royal-blue); font-size: 0.95rem; }
     
@@ -161,15 +164,28 @@
     /* 유튜브 채널 & 영상 라운지 섹션 */
     .youtube-sec { background: #fff; border-bottom: 1px solid #e2e8f0; }
     .yt-grid {
-      display: grid; grid-template-columns: 1.35fr 0.9fr; gap: 36px; align-items: center;
+      display: grid; grid-template-columns: 1.25fr 1fr; gap: 36px; align-items: center;
       background: var(--bg-light); border: 1px solid #cbd5e1; border-radius: 16px; padding: 36px;
     }
     .video-frame {
       position: relative; width: 100%; padding-bottom: 56.25%; height: 0;
-      border-radius: 12px; overflow: hidden; background: #0f172a;
+      border-radius: 12px; overflow: hidden; background: linear-gradient(135deg, #0b192e 0%, #1e3a8a 100%);
       box-shadow: 0 12px 30px rgba(0,0,0,0.15);
     }
     .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    .yt-channel-banner {
+      position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+      justify-content: center; text-align: center; color: #fff; padding: 24px;
+    }
+    .yt-play-circle {
+      width: 68px; height: 68px; border-radius: 50%; background: #dc2626;
+      display: flex; align-items: center; justify-content: center; font-size: 1.7rem;
+      margin-bottom: 14px; box-shadow: 0 8px 25px rgba(220, 38, 38, 0.5); transition: 0.2s;
+    }
+    .yt-channel-banner:hover .yt-play-circle { transform: scale(1.08); }
+    .yt-channel-banner h4 { font-size: 1.35rem; font-weight: 900; margin-bottom: 6px; }
+    .yt-channel-banner span { font-size: 0.88rem; color: #bfdbfe; }
+
     .yt-badge {
       display: inline-block; background: #fee2e2; color: #b91c1c; font-weight: 800;
       font-size: 0.8rem; padding: 4px 12px; border-radius: 4px; margin-bottom: 12px;
@@ -297,9 +313,7 @@
     .modal-list li { margin-bottom: 8px; color: var(--text-dark); }
     .modal-list li::before { content: "✔ "; color: var(--royal-blue); font-weight: 900; }
 
-    /* =====================================================================
-       ★ 박문성 대표 AI 로봇 상담 챗봇 스타일 (하단 면책 안내 고정 포함)
-       ===================================================================== */
+    /* 박문성 대표 AI 로봇 상담 챗봇 스타일 */
     .ai-launcher {
       position: fixed; right: 24px; bottom: 24px; z-index: 1800;
       display: flex; align-items: center; gap: 12px;
@@ -373,7 +387,6 @@
     .chip-btn.urgent { background: #fef2f2; border-color: #dc2626; color: #b91c1c; }
     .chip-btn.urgent:hover { background: #dc2626; color: #fff; }
 
-    /* 챗봇 내 즉시 이메일 상담 폼 */
     .mini-form {
       background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px;
       padding: 12px; margin-top: 8px; display: flex; flex-direction: column; gap: 8px;
@@ -402,7 +415,6 @@
       padding: 0 16px; font-weight: 800; font-size: 0.86rem; cursor: pointer;
     }
 
-    /* 챗봇 최하단 상시 고정 AI 면책 안내 배너 */
     .chat-disclaimer {
       background: #f8fafc; color: #64748b; font-size: 0.72rem; line-height: 1.4;
       padding: 7px 14px 10px; text-align: center; border-top: 1px dashed #e2e8f0;
@@ -483,7 +495,7 @@
         <div class="quick-contact">
           <span>📞 직통: <strong>010-2062-4600</strong></span>
           <span>📠 팩스: <strong>0508-918-4600</strong></span>
-          <span>✉️ <strong>PMSUNG@NAVER.COM</strong></span>
+          <span>✉️ <strong>pmsung@naver.com</strong></span>
         </div>
 
         <div class="btn-group">
@@ -505,27 +517,30 @@
     </div>
   </section>
 
-  <!-- 주간 대구·경북 부동산 브리핑 10장 카드뉴스 전자책 뷰어 -->
+  <!-- 주간 대구·경북 부동산 브리핑 주차별 아카이브 슬라이드 뷰어 -->
   <section id="weekly" class="weekly-sec">
     <div class="container">
       <div class="section-title">
-        <span>WEEKLY REAL ESTATE BRIEFING</span>
+        <span>WEEKLY REAL ESTATE BRIEFING ARCHIVE</span>
         <h2>매주 발행하는 대구·경북 부동산 주간 소식지</h2>
-        <p>좌우 화살표 또는 아래 번호(1~10페이지)를 눌러 이번 주 핵심 부동산 뉴스를 확인하세요.</p>
+        <p>상단 발행 호수를 선택하시면 최신 호수부터 지난 주차 소식지까지 모두 열람하실 수 있습니다.</p>
       </div>
 
       <div class="viewer-wrapper">
         <div class="viewer-header">
-          <span class="issue-badge">📰 해든 주간 브리핑 (표지 포함 총 10P)</span>
+          <div class="issue-select-wrap">
+            <label for="issueSelect">📰 호수 선택:</label>
+            <select id="issueSelect" class="issue-select" onchange="changeIssue(this.value)"></select>
+          </div>
           <span class="page-indicator" id="pageIndicator">1 / 10 페이지 (표지)</span>
         </div>
 
         <div class="slide-stage">
-          <img id="weeklyImg" src="weekly/1.png" alt="대구·경북 부동산 주간 브리핑"
+          <img id="weeklyImg" src="" alt="대구·경북 부동산 주간 브리핑"
                onerror="this.style.display='none'; document.getElementById('imgFallback').style.display='block';">
           <div id="imgFallback" class="slide-placeholder" style="display:none;">
-            📂 <strong>주간지 이미지 연결 대기 중</strong><br><br>
-            GitHub <code>haedeun-web/weekly</code> 폴더 안에<br>
+            📂 <strong>선택하신 주차의 이미지 준비 중</strong><br><br>
+            GitHub <code>weekly/<span id="missingFolder"></span></code> 폴더 안에<br>
             <code>1.png ~ 10.png</code> 파일을 올리시면 이곳에 자동으로 표시됩니다.
           </div>
 
@@ -537,7 +552,7 @@
           <div class="thumb-dots" id="dotContainer"></div>
         </div>
 
-        <button class="btn-share" onclick="copySiteLink()">🔗 카카오톡·문자로 이번 주 주간지 링크 복사해서 공유하기</button>
+        <button class="btn-share" onclick="copySiteLink()">🔗 카카오톡·문자로 주간 소식지 링크 복사해서 공유하기</button>
       </div>
     </div>
   </section>
@@ -547,20 +562,24 @@
     <div class="container">
       <div class="section-title">
         <span>OFFICIAL YOUTUBE CHANNEL</span>
-        <h2>박문성 대표 유튜브 채널 · 실전 상식 & 해설 영상</h2>
-        <p>홈페이지에서 바로 핵심 해설 영상을 시청하시고, 공식 유튜브 채널에서 더 많은 콘텐츠를 만나보세요.</p>
+        <h2>박문성 대표 유튜브 채널 · 박씨네 보험톡</h2>
+        <p>어려운 보험·부동산·재산 안전 상식을 공식 유튜브 채널에서 쉽고 명쾌하게 만나보세요.</p>
       </div>
 
       <div class="yt-grid">
-        <div class="video-frame">
-          <iframe id="ytPlayer" src="" title="유튜브 해설 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-frame" id="ytStage">
+          <a href="https://www.youtube.com/@박씨네보험톡" target="_blank" class="yt-channel-banner">
+            <div class="yt-play-circle">▶</div>
+            <h4>박씨네 보험톡 공식 유튜브 채널</h4>
+            <span>www.youtube.com/@박씨네보험톡 · 최신 해설 영상 보러가기</span>
+          </a>
         </div>
         <div class="yt-info">
-          <span class="yt-badge">▶ YOUTUBE MEDIA LOUNGE</span>
-          <h3>어려운 부동산·보험·재산 안전 상식을 쉽고 명쾌하게 풀어드립니다</h3>
-          <p>건물·공장 화재보험 리스크 점검부터 꼭 알아야 할 실전 상식까지, 영상으로 편하게 확인하실 수 있습니다. 새로운 영상이 올라올 때마다 이곳에서도 바로 시청 가능합니다.</p>
-          <a id="ytChannelBtn" href="https://www.youtube.com" target="_blank" class="btn-youtube">
-            ▶ 공식 유튜브 채널 방문 및 구독하기
+          <span class="yt-badge">▶ OFFICIAL YOUTUBE CHANNEL</span>
+          <h3>건물·공장 화재보험부터 꼭 알아야 할 실전 재산 안전 상식까지</h3>
+          <p>일상과 사업장에서 겪을 수 있는 보험 분쟁 사례, 부동산 화재·배상 리스크 방어 노하우를 누구나 이해하기 쉽게 풀어드립니다. 채널 방문 후 구독과 알림 설정으로 최신 정보를 받아보세요.</p>
+          <a id="ytChannelBtn" href="https://www.youtube.com/@박씨네보험톡" target="_blank" class="btn-youtube">
+            ▶ 박씨네 보험톡 유튜브 채널 바로가기
           </a>
         </div>
       </div>
@@ -765,7 +784,7 @@
     <div class="footer-inner">
       <div class="footer-title">해든 공인중개사사무소</div>
       <div>대표 공인중개사: 박문성 | 소재지: 대구광역시 동구 화랑로 37길 47 (명진빌딩) 104호</div>
-      <div>연락처: 010-2062-4600 | 팩스: 0508-918-4600 | 이메일: PMSUNG@NAVER.COM</div>
+      <div>연락처: 010-2062-4600 | 팩스: 0508-918-4600 | 이메일: pmsung@naver.com</div>
       <div>중개사무소 등록번호: 제27140-2026-XXXXX호 (개설등록번호 발급 후 기입)</div>
       <div style="margin-top: 10px; font-size: 0.8rem; color: #64748b;">© 2026 Haedeun Real Estate & Asset Safety Consulting. All rights reserved.</div>
     </div>
@@ -782,9 +801,7 @@
     </div>
   </div>
 
-  <!-- =====================================================================
-       ★ 박문성 대표 형상화 AI 로봇 실시간 상담 챗봇 위젯
-       ===================================================================== -->
+  <!-- 박문성 대표 형상화 AI 로봇 실시간 상담 챗봇 위젯 -->
   <button class="ai-launcher" onclick="toggleChat()" aria-label="AI 상담 열기">
     <div class="ai-avatar-badge">
       <svg viewBox="0 0 100 100" width="42" height="42">
@@ -846,7 +863,6 @@
       <button type="button" onclick="sendUserText()">전송</button>
     </div>
 
-    <!-- ★ 챗봇 하단 상시 고정 AI 실수·참고용 안내 문구 -->
     <div class="chat-disclaimer">
       ⚠️ <strong>AI 상담 유의사항:</strong> AI는 실수를 할 수 있습니다. 본 상담 내용은 법적 효력이 없는 <strong>참고용 안내</strong>이며, 정확한 계약·권리 판단은 반드시 박문성 대표와 직접 상담하시기 바랍니다.
     </div>
@@ -860,23 +876,44 @@
 
   <script>
     /* =====================================================================
-       ★ [유튜브 영상 & 채널 설정 구역] — 아래 두 줄만 원하시는 주소로 바꾸세요!
+       ★ [1. 주차별 주간 소식지 아카이브 설정 구역]
        ===================================================================== */
-    const youtubeVideoId = '7GEtniXau4A'; 
+    const weeklyIssues = [
+      { folder: '2026-11-3w', label: '2026년 11월 3주호 (최신호 · 총 10P)' }
+    ];
+
+    /* =====================================================================
+       ★ [2. 유튜브 영상 & 채널 설정 구역]
+       - 나중에 대표님 특정 영상 ID(예: watch?v=뒤의 코드)를 넣으시면 바로 재생창으로 바뀝니다.
+       - 비워두시면(@박씨네보험톡 채널 공식 배너)가 깔끔하게 표시됩니다.
+       ===================================================================== */
+    const youtubeVideoId = ''; 
     const youtubeChannelUrl = 'https://www.youtube.com/@박씨네보험톡';
 
-    document.getElementById('ytPlayer').src = `https://www.youtube.com/embed/${youtubeVideoId}`;
+    if (youtubeVideoId) {
+      document.getElementById('ytStage').innerHTML = `<iframe src="https://www.youtube.com/embed/${youtubeVideoId}" title="박씨네 보험톡 해설 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    }
     document.getElementById('ytChannelBtn').href = youtubeChannelUrl;
 
-    /* 1. 모바일 메뉴 토글 */
+    /* 모바일 메뉴 토글 */
     function toggleMobileMenu() {
       document.getElementById('mobileDropdown').classList.toggle('open');
     }
 
-    /* 2. 주간지 10장 슬라이드 (PNG) */
+    /* 주차별 주간지 뷰어 엔진 */
     const totalPages = 10;
     let currentPage = 1;
+    let currentFolder = weeklyIssues[0].folder;
     const imgExt = 'png';
+
+    const issueSelect = document.getElementById('issueSelect');
+    weeklyIssues.forEach((issue, idx) => {
+      const opt = document.createElement('option');
+      opt.value = issue.folder;
+      opt.textContent = issue.label;
+      if (idx === 0) opt.selected = true;
+      issueSelect.appendChild(opt);
+    });
 
     const dotContainer = document.getElementById('dotContainer');
     for (let i = 1; i <= totalPages; i++) {
@@ -887,6 +924,11 @@
       dotContainer.appendChild(btn);
     }
 
+    function changeIssue(folderName) {
+      currentFolder = folderName;
+      goToPage(1);
+    }
+
     function goToPage(page) {
       if (page < 1) page = totalPages;
       if (page > totalPages) page = 1;
@@ -894,9 +936,10 @@
 
       const img = document.getElementById('weeklyImg');
       const fallback = document.getElementById('imgFallback');
+      document.getElementById('missingFolder').textContent = currentFolder;
       img.style.display = 'block';
       fallback.style.display = 'none';
-      img.src = `weekly/${currentPage}.${imgExt}`;
+      img.src = `weekly/${currentFolder}/${currentPage}.${imgExt}`;
 
       const label = currentPage === 1 ? `${currentPage} / ${totalPages} 페이지 (표지)` : `${currentPage} / ${totalPages} 페이지`;
       document.getElementById('pageIndicator').textContent = label;
@@ -907,6 +950,7 @@
     }
 
     function changePage(step) { goToPage(currentPage + step); }
+    goToPage(1);
 
     function copySiteLink() {
       const shareUrl = 'https://haedeun.netlify.app/#weekly';
@@ -915,7 +959,7 @@
       });
     }
 
-    /* 3. 4대 특화 분야 상세 체크리스트 팝업 데이터 */
+    /* 4대 특화 분야 상세 체크리스트 팝업 데이터 */
     const modalData = {
       commercial: {
         title: '상가 · 상가주택 정밀 권리분석 체크리스트',
@@ -977,9 +1021,7 @@
       document.getElementById('detailModal').classList.remove('open');
     }
 
-    /* =====================================================================
-       ★ 4. 박문성 대표 시그니처 AI 로봇 상담 챗봇 엔진
-       ===================================================================== */
+    /* 박문성 대표 시그니처 AI 로봇 상담 챗봇 엔진 */
     let chatInitialized = false;
     const chatBody = document.getElementById('chatBody');
 
