@@ -4,7 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>해든 공인중개사사무소 | 박문성 대표 - 대구·경북 권리분석 & 자산 안전 지킴이</title>
+  <meta name="description" content="대구 동구 거점 대구·경북 상가, 공장, 재개발·재건축, 경·공매 정밀 권리분석 및 건물·공장 화재보험, 부동산 AI 마케팅 교육 총괄 해든 공인중개사사무소 박문성 대표입니다." />
+  <meta name="keywords" content="대구공인중개사, 대구동구부동산, 대구상가매매, 대구공장중개, 대구경매권리분석, 건물화재보험, 해든공인중개사사무소, 박문성" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- 2026 AI 검색 최적화(GEO / AEO) 구조화 데이터 (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "RealEstateAgent",
+        "name": "해든 공인중개사사무소",
+        "description": "대구·경북 상가, 공장, 재개발·재건축, 경·공매 정밀 권리분석 및 건물·공장 맞춤형 화재보험·배상책임 안전 설계 컨설팅",
+        "url": "https://haedeun.netlify.app/",
+        "telephone": "+82-10-2062-4600",
+        "faxNumber": "+82-508-918-4600",
+        "email": "pmsung@naver.com",
+        "founder": {
+          "@type": "Person",
+          "name": "박문성",
+          "jobTitle": "대표 공인중개사 · 자산 안전 컨설턴트"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "화랑로 37길 47 (명진빌딩) 104호",
+          "addressLocality": "동구",
+          "addressRegion": "대구광역시",
+          "addressCountry": "KR"
+        },
+        "areaServed": ["대구광역시", "경상북도"]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "상가나 공장을 매수할 때 등기부등본 외에 무엇을 추가로 확인해야 하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "상가건물 임대차보호법상 환산보증금과 10년 계약갱신요구권 잔여 기간, 건축물대장 위반 여부, 공장의 경우 전력 용량(kW)·오폐수 인허가·공장저당권 기계기구 목록 일치 여부를 반드시 사전 검증해야 합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "건물·공장 취득 후 화재보험은 왜 별도로 점검해야 하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "상법상 업종 변경이나 증축 통지 의무를 놓치면 사고 시 비례보상(감액)될 수 있으며, 시가가 아닌 재조달가액 기준으로 설계하고 임대인·시설소유자 배상책임 특약을 결합해야 자산을 온전히 지킬 수 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "경·공매 물건의 권리분석과 현장 명도 컨설팅도 의뢰할 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네, 가능합니다. 말소기준권리 분석, 선순위 임차인 배당·인수 리스크, 민법상 유치권·법정지상권 현장 조사부터 적정 입찰가 산출 및 낙찰 후 안전 관리까지 원스톱으로 지원합니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <style>
     :root {
       --navy-deep: #0b192e;
@@ -12,6 +75,8 @@
       --royal-blue: #1d63dc;
       --blue-bright: #3b82f6;
       --gold-accent: #d4af37;
+      --kakao-yellow: #fee500;
+      --kakao-brown: #191919;
       --bg-light: #f4f7fb;
       --text-dark: #1e293b;
       --text-gray: #64748b;
@@ -35,7 +100,7 @@
       display: flex; align-items: center; gap: 8px; white-space: nowrap;
     }
     .logo-tag { font-size: 0.72rem; background: var(--royal-blue); color: #fff; padding: 2px 8px; border-radius: 4px; font-weight: 700; }
-    nav ul { display: flex; list-style: none; gap: 18px; font-size: 0.89rem; font-weight: 500; white-space: nowrap; }
+    nav ul { display: flex; list-style: none; gap: 16px; font-size: 0.88rem; font-weight: 500; white-space: nowrap; }
     nav ul li a:hover { color: var(--blue-bright); transition: 0.2s; }
 
     /* 모바일 햄버거 버튼 */
@@ -57,7 +122,7 @@
     /* 히어로 섹션 */
     .hero {
       background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-card) 100%);
-      color: #fff; padding: 135px 20px 95px; position: relative; overflow: hidden;
+      color: #fff; padding: 130px 20px 80px; position: relative; overflow: hidden;
     }
     .hero-grid {
       max-width: 1180px; margin: 0 auto; display: grid;
@@ -68,33 +133,38 @@
       border: 1px solid var(--royal-blue); padding: 6px 16px; border-radius: 50px;
       font-size: 0.84rem; font-weight: 700; margin-bottom: 18px;
     }
-    .hero h1 { font-size: 2.4rem; font-weight: 900; line-height: 1.32; margin-bottom: 18px; letter-spacing: -1px; }
+    .hero h1 { font-size: 2.38rem; font-weight: 900; line-height: 1.32; margin-bottom: 18px; letter-spacing: -1px; }
     .hero h1 span { color: #60a5fa; }
-    .hero-desc { font-size: 1.04rem; color: #cbd5e1; margin-bottom: 28px; font-weight: 300; }
+    .hero-desc { font-size: 1.03rem; color: #cbd5e1; margin-bottom: 26px; font-weight: 300; }
     
     .quick-contact {
-      display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 30px;
+      display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 28px;
       padding: 14px 18px; background: rgba(255,255,255,0.06); border-radius: 8px;
       border-left: 4px solid var(--royal-blue); font-size: 0.92rem; color: #e2e8f0;
     }
     .quick-contact strong { color: #fff; }
 
-    .btn-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
     .btn-primary {
       background: var(--royal-blue); color: #fff; font-weight: 800;
-      padding: 15px 28px; border-radius: 6px; font-size: 0.98rem; transition: 0.2s; display: inline-block; cursor: pointer; border: none;
+      padding: 14px 24px; border-radius: 6px; font-size: 0.95rem; transition: 0.2s; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; border: none;
     }
     .btn-primary:hover { background: var(--blue-bright); transform: translateY(-2px); }
+    .btn-kakao {
+      background: var(--kakao-yellow); color: var(--kakao-brown); font-weight: 800;
+      padding: 14px 22px; border-radius: 6px; font-size: 0.95rem; transition: 0.2s; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; border: none;
+    }
+    .btn-kakao:hover { filter: brightness(0.95); transform: translateY(-2px); }
     .btn-outline {
-      border: 1px solid rgba(255,255,255,0.5); color: #fff; font-weight: 500;
-      padding: 15px 28px; border-radius: 6px; font-size: 0.98rem; transition: 0.2s; display: inline-block; cursor: pointer; background: transparent;
+      border: 1px solid rgba(255,255,255,0.5); color: #fff; font-weight: 600;
+      padding: 14px 22px; border-radius: 6px; font-size: 0.95rem; transition: 0.2s; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; background: transparent;
     }
     .btn-outline:hover { background: rgba(255,255,255,0.1); }
 
     /* 우측 원형 프로필 프레임 */
     .profile-card { text-align: center; }
     .circle-frame {
-      width: 260px; height: 260px; margin: 0 auto 18px; border-radius: 50%;
+      width: 255px; height: 255px; margin: 0 auto 18px; border-radius: 50%;
       border: 5px solid #fff; background: #fff; overflow: hidden;
       box-shadow: 0 15px 35px rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center;
     }
@@ -102,6 +172,23 @@
     .profile-fallback { color: var(--navy-deep); font-weight: 900; font-size: 1.2rem; padding: 20px; text-align: center; }
     .profile-name { font-size: 1.45rem; font-weight: 900; letter-spacing: 1px; }
     .profile-role { color: #60a5fa; font-weight: 700; font-size: 0.95rem; margin-top: 2px; }
+
+    /* 2026 트렌드: 핵심 신뢰 지표 벤토 그리드(Bento Grid) */
+    .bento-bar {
+      background: #081222; border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 28px 20px; color: #fff;
+    }
+    .bento-grid {
+      max-width: 1180px; margin: 0 auto; display: grid;
+      grid-template-columns: repeat(4, 1fr); gap: 16px;
+    }
+    .bento-item {
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 12px; padding: 18px 20px;
+    }
+    .bento-label { font-size: 0.78rem; color: #93c5fd; font-weight: 700; margin-bottom: 4px; }
+    .bento-value { font-size: 1.18rem; font-weight: 900; color: #fff; margin-bottom: 4px; }
+    .bento-sub { font-size: 0.82rem; color: #94a3b8; }
 
     /* 공통 섹션 */
     section { padding: 85px 20px; }
@@ -156,7 +243,7 @@
     }
     .dot-btn.active { background: var(--royal-blue); color: #fff; border-color: var(--royal-blue); }
     .btn-share {
-      width: 100%; margin-top: 16px; background: #fee500; color: #191919; font-weight: 800;
+      width: 100%; margin-top: 16px; background: var(--kakao-yellow); color: var(--kakao-brown); font-weight: 800;
       border: none; padding: 13px; border-radius: 8px; font-size: 0.95rem; cursor: pointer;
     }
     .btn-share:hover { filter: brightness(0.96); }
@@ -275,7 +362,27 @@
       padding: 20px 24px; font-size: 0.86rem; color: #475569; line-height: 1.7;
     }
 
-    /* 상담 신청 폼 */
+    /* 2026 트렌드: 자주 묻는 질문(FAQ) 아코디언 섹션 */
+    .faq-sec { background: #fff; border-top: 1px solid #e2e8f0; }
+    .faq-list { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      border: 1px solid #cbd5e1; border-radius: 10px; overflow: hidden; background: #fff;
+    }
+    .faq-q {
+      width: 100%; text-align: left; padding: 18px 22px; background: var(--bg-light);
+      border: none; font-family: inherit; font-size: 1rem; font-weight: 800; color: var(--navy-deep);
+      display: flex; justify-content: space-between; align-items: center; gap: 12px; cursor: pointer;
+    }
+    .faq-q:hover { background: #e2e8f0; }
+    .faq-q span.icon { font-size: 1.2rem; color: var(--royal-blue); transition: 0.25s; }
+    .faq-item.open .faq-q span.icon { transform: rotate(45deg); }
+    .faq-a {
+      display: none; padding: 18px 22px; font-size: 0.93rem; color: #334155;
+      border-top: 1px solid #e2e8f0; line-height: 1.7; background: #fff;
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* 상담 신청 폼 + 개인정보 필수 동의 */
     .contact-sec { background: var(--bg-light); }
     .form-box {
       max-width: 720px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0;
@@ -287,6 +394,22 @@
       width: 100%; padding: 13px 14px; border: 1px solid #cbd5e1; border-radius: 6px;
       font-family: inherit; font-size: 0.95rem;
     }
+    .privacy-box {
+      background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;
+      padding: 14px 16px; margin-bottom: 20px; display: flex; align-items: center;
+      justify-content: space-between; gap: 10px; flex-wrap: wrap;
+    }
+    .privacy-check {
+      display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 700;
+      color: var(--navy-deep); cursor: pointer;
+    }
+    .privacy-check input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--royal-blue); cursor: pointer; }
+    .privacy-view-btn {
+      background: none; border: 1px solid #94a3b8; color: #475569; font-size: 0.78rem;
+      font-weight: 700; padding: 4px 10px; border-radius: 4px; cursor: pointer;
+    }
+    .privacy-view-btn:hover { background: #e2e8f0; }
+
     .btn-submit {
       width: 100%; background: var(--navy-deep); color: #fff; font-weight: 800;
       padding: 16px; border: none; border-radius: 6px; font-size: 1.05rem; cursor: pointer; transition: 0.2s;
@@ -302,18 +425,19 @@
     .modal-card {
       background: #fff; max-width: 560px; width: 100%; border-radius: 14px; padding: 34px 28px;
       box-shadow: 0 20px 50px rgba(0,0,0,0.3); position: relative; border-top: 5px solid var(--royal-blue);
+      max-height: 88vh; overflow-y: auto;
     }
     .modal-close {
       position: absolute; top: 18px; right: 20px; background: none; border: none;
       font-size: 1.5rem; cursor: pointer; color: var(--text-gray);
     }
-    .modal-card h3 { font-size: 1.4rem; font-weight: 900; color: var(--navy-deep); margin-bottom: 12px; }
-    .modal-card p { font-size: 0.95rem; color: var(--text-gray); margin-bottom: 18px; }
+    .modal-card h3 { font-size: 1.35rem; font-weight: 900; color: var(--navy-deep); margin-bottom: 12px; }
+    .modal-card p { font-size: 0.94rem; color: var(--text-gray); margin-bottom: 18px; }
     .modal-list { list-style: none; background: var(--bg-light); padding: 18px; border-radius: 10px; margin-bottom: 22px; font-size: 0.9rem; }
     .modal-list li { margin-bottom: 8px; color: var(--text-dark); }
     .modal-list li::before { content: "✔ "; color: var(--royal-blue); font-weight: 900; }
 
-    /* 박문성 대표 AI 로봇 상담 챗봇 스타일 */
+    /* 시안 A: 부동산 전문가 컨설턴트 챗봇 위젯 스타일 */
     .ai-launcher {
       position: fixed; right: 24px; bottom: 24px; z-index: 1800;
       display: flex; align-items: center; gap: 12px;
@@ -334,7 +458,7 @@
 
     .chat-window {
       display: none; position: fixed; right: 24px; bottom: 94px; z-index: 1900;
-      width: 390px; max-width: calc(100vw - 32px); height: 610px; max-height: calc(100vh - 125px);
+      width: 390px; max-width: calc(100vw - 32px); height: 620px; max-height: calc(100vh - 125px);
       background: #fff; border-radius: 18px; overflow: hidden;
       box-shadow: 0 22px 55px rgba(11, 25, 46, 0.35); border: 1px solid #cbd5e1;
       flex-direction: column;
@@ -362,7 +486,7 @@
       flex: 1; padding: 16px; overflow-y: auto; background: #f1f5f9;
       display: flex; flex-direction: column; gap: 12px;
     }
-    .msg { max-width: 86%; padding: 12px 14px; border-radius: 14px; font-size: 0.88rem; line-height: 1.55; }
+    .msg { max-width: 88%; padding: 12px 14px; border-radius: 14px; font-size: 0.88rem; line-height: 1.55; }
     .msg.bot {
       align-self: flex-start; background: #fff; color: var(--text-dark);
       border: 1px solid #e2e8f0; border-bottom-left-radius: 4px;
@@ -391,9 +515,12 @@
       background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px;
       padding: 12px; margin-top: 8px; display: flex; flex-direction: column; gap: 8px;
     }
-    .mini-form input, .mini-form textarea {
+    .mini-form input[type="text"], .mini-form input[type="tel"], .mini-form textarea {
       width: 100%; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 6px;
       font-family: inherit; font-size: 0.84rem;
+    }
+    .mini-privacy {
+      display: flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; color: var(--navy-deep);
     }
     .mini-form button {
       background: var(--navy-deep); color: #fff; font-weight: 800; border: none;
@@ -421,33 +548,40 @@
     }
     .chat-disclaimer strong { color: #334155; }
 
-    /* 스마트폰 하단 고정 상담 바 */
+    /* 스마트폰 하단 고정 상담 바 (전화 · 카카오톡 · 전문가상담 3분할) */
     .mobile-bottom-bar {
       display: none; position: fixed; bottom: 0; left: 0; width: 100%;
       background: var(--navy-deep); z-index: 1500; border-top: 1px solid rgba(255,255,255,0.15);
     }
     .mobile-bottom-bar a, .mobile-bottom-bar button {
-      flex: 1; text-align: center; padding: 14px 8px; font-weight: 800; font-size: 0.88rem;
+      flex: 1; text-align: center; padding: 14px 4px; font-weight: 800; font-size: 0.84rem;
       color: #fff; border: none; background: transparent; cursor: pointer; font-family: inherit;
     }
     .mobile-bottom-bar a.call-btn { background: var(--royal-blue); }
-    .mobile-bottom-bar button.ai-btn { background: #1e3a8a; border-left: 1px solid rgba(255,255,255,0.15); }
+    .mobile-bottom-bar a.kakao-btn { background: var(--kakao-yellow); color: var(--kakao-brown); }
+    .mobile-bottom-bar button.ai-btn { background: #1e3a8a; }
 
     /* 푸터 */
-    footer { background: var(--navy-deep); color: #94a3b8; padding: 52px 20px 90px; font-size: 0.88rem; border-top: 2px solid var(--royal-blue); }
+    footer { background: var(--navy-deep); color: #94a3b8; padding: 52px 20px 95px; font-size: 0.88rem; border-top: 2px solid var(--royal-blue); }
     .footer-inner { max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 8px; }
     .footer-title { color: #fff; font-weight: 800; font-size: 1.15rem; margin-bottom: 6px; }
+    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+    .footer-links button, .footer-links a {
+      background: none; border: none; color: #cbd5e1; font-size: 0.84rem; cursor: pointer; text-decoration: underline; font-family: inherit;
+    }
 
     @media (max-width: 980px) {
       nav ul { display: none; }
       .mobile-menu-btn { display: block; }
+      .bento-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 860px) {
       .hero-grid, .safety-box, .academy-box, .yt-grid { grid-template-columns: 1fr; }
-      .hero { text-align: center; padding-top: 110px; }
+      .hero { text-align: center; padding-top: 105px; }
       .quick-contact, .btn-group { justify-content: center; }
       .circle-frame { width: 210px; height: 210px; }
       .hero h1 { font-size: 1.85rem; }
+      .bento-grid { grid-template-columns: 1fr; }
       .slide-stage { min-height: 280px; }
       .mobile-bottom-bar { display: flex; }
       .ai-launcher { bottom: 64px; right: 14px; padding: 6px 14px 6px 8px; }
@@ -469,6 +603,7 @@
           <li><a href="#safety">자산 안전·보험</a></li>
           <li><a href="#academy">AI 아카데미</a></li>
           <li><a href="#payment">대금결제</a></li>
+          <li><a href="#faq">자주묻는질문</a></li>
           <li><a href="#contact">상담신청</a></li>
         </ul>
       </nav>
@@ -476,11 +611,12 @@
     </div>
     <div class="mobile-dropdown" id="mobileDropdown">
       <a href="#weekly" onclick="toggleMobileMenu()">📰 주간 대구·경북 부동산 브리핑</a>
-      <a href="#youtube" onclick="toggleMobileMenu()">▶️ 유튜브 채널 · 해설 영상 보기</a>
+      <a href="#youtube" onclick="toggleMobileMenu()">▶️ 유튜브 채널 · 박씨네 보험톡</a>
       <a href="#specialty" onclick="toggleMobileMenu()">🏢 4대 특화중개 (상가·공장·재개발·경공매)</a>
       <a href="#safety" onclick="toggleMobileMenu()">🔥 건물·공장 화재보험 및 재산 안전 케어</a>
       <a href="#academy" onclick="toggleMobileMenu()">🤖 부동산 AI 마케팅 아카데미</a>
       <a href="#payment" onclick="toggleMobileMenu()">💳 온라인 대금결제 · 수수료 센터</a>
+      <a href="#faq" onclick="toggleMobileMenu()">❓ 자주 묻는 질문 (FAQ)</a>
       <a href="#contact" onclick="toggleMobileMenu()">📝 권리분석 및 상담 신청하기</a>
     </div>
   </header>
@@ -499,8 +635,9 @@
         </div>
 
         <div class="btn-group">
-          <a href="#weekly" class="btn-primary">📰 이번 주 대구·경북 주간 브리핑 보기</a>
-          <button type="button" onclick="toggleChat(true)" class="btn-outline">🤖 박문성 AI 로봇 실시간 상담</button>
+          <a href="#weekly" class="btn-primary">📰 이번 주 주간 브리핑</a>
+          <a href="https://open.kakao.com/o/sWvsGSXi" target="_blank" class="btn-kakao">💬 카카오톡 오픈채팅 상담</a>
+          <button type="button" onclick="toggleChat(true)" class="btn-outline">🏛️ AI 권리분석 상담실</button>
         </div>
       </div>
 
@@ -516,6 +653,32 @@
       </div>
     </div>
   </section>
+
+  <!-- 2026 트렌드: 핵심 신뢰 지표 벤토 그리드(Bento Grid) -->
+  <div class="bento-bar">
+    <div class="bento-grid">
+      <div class="bento-item">
+        <div class="bento-label">COVERAGE AREA</div>
+        <div class="bento-value">대구·경북 전 지역 총괄</div>
+        <div class="bento-sub">동구 거점 · 상가·공장·경공매 현장 밀착 분석</div>
+      </div>
+      <div class="bento-item">
+        <div class="bento-label">DUAL PROTECTION</div>
+        <div class="bento-value">권리분석 + 화재보험 결합</div>
+        <div class="bento-sub">등기·인허가 검증부터 재조달가액 화재·배상 설계까지</div>
+      </div>
+      <div class="bento-item">
+        <div class="bento-label">WEEKLY BRIEFING</div>
+        <div class="bento-value">매주 10P 주간 소식지 발행</div>
+        <div class="bento-sub">대구·경북 정비사업·시세·법령 이슈 아카이브</div>
+      </div>
+      <div class="bento-item">
+        <div class="bento-label">INSTANT CONSULTATION</div>
+        <div class="bento-value">24시 AI상담 · 카톡 · 직통연결</div>
+        <div class="bento-sub">국토부·민법·상법 기준 1차 진단 후 대표 직접 상담</div>
+      </div>
+    </div>
+  </div>
 
   <!-- 주간 대구·경북 부동산 브리핑 주차별 아카이브 슬라이드 뷰어 -->
   <section id="weekly" class="weekly-sec">
@@ -645,7 +808,10 @@
           <span class="safety-badge">TOTAL ASSET PROTECTION</span>
           <h2>계약서 도장만으로 끝나지 않는<br>건물·공장 완벽 재산 안전 케어</h2>
           <p>상가주택이나 공장을 매수·임차한 뒤 예기치 못한 화재나 시설 사고 한 번으로 수십 년 모은 자산을 잃는 경우가 많습니다. 공인중개사와 보험 전문가의 시선을 결합해 부동산 취득과 동시에 빈틈없는 방어막을 설계해 드립니다.</p>
-          <a href="#contact" class="btn-primary">내 건물·사업장 안전 리스크 점검 신청</a>
+          <div class="btn-group">
+            <a href="#contact" class="btn-primary">안전 리스크 점검 신청</a>
+            <a href="https://open.kakao.com/o/sWvsGSXi" target="_blank" class="btn-kakao">💬 카카오톡 오픈채팅 문의</a>
+          </div>
         </div>
         <div class="safety-points">
           <div class="safety-item">
@@ -741,6 +907,59 @@
     </div>
   </section>
 
+  <!-- 2026 트렌드: 자주 묻는 질문(FAQ) 아코디언 섹션 -->
+  <section id="faq" class="faq-sec">
+    <div class="container">
+      <div class="section-title">
+        <span>FREQUENTLY ASKED QUESTIONS</span>
+        <h2>자주 묻는 질문 (권리분석 · 화재보험 · 중개 의뢰)</h2>
+        <p>의뢰인분들이 계약 전 가장 많이 확인하시는 핵심 질문과 답변을 정리했습니다.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button type="button" class="faq-q" onclick="toggleFaq(this)">
+            <span>Q1. 상가나 상가주택 매수 시 등기부등본 외에 무엇을 가장 먼저 확인해야 하나요?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-a">
+            상가건물 임대차보호법상 환산보증금(보증금 + 월세×100)에 따른 대항력 및 <strong>10년 계약갱신요구권</strong> 잔여 기간을 가장 먼저 확인해야 합니다. 또한 건축물대장상 불법 증축·무단 용도변경 등 위반건축물 기재 여부를 점검해야 취득 후 이행강제금 부과와 영업허가 불가를 막을 수 있습니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-q" onclick="toggleFaq(this)">
+            <span>Q2. 공장이나 창고를 매입·임차할 때 중개 과정에서 어떤 점이 다른가요?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-a">
+            공장·창고는 일반 부동산과 달리 <strong>토지이용계획상 업종별 공장등록 가능 여부</strong>, 인입 전력 용량(kW), 상하수도 및 오폐수 처리 기준, 대형 트레일러 진출입 도로 폭이 핵심입니다. 특히 공장저당권이 설정된 경우 등기 외 기계기구 목록 일치 여부까지 정밀 대조해 드립니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-q" onclick="toggleFaq(this)">
+            <span>Q3. 건물·공장 화재보험을 중개와 함께 설계받으면 어떤 장점이 있나요?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-a">
+            상법상 건물 용도·업종 변경 시 보험사에 통지하지 않으면 화재 발생 시 비례보상(감액)되거나 보상에서 제외될 수 있습니다. 해든 공인중개사사무소는 매수·임대차 계약 단계부터 건물의 실제 구조와 업종에 맞춰 <strong>재조달가액 기준 화재보험과 임대인·시설소유자 배상책임 특약</strong>을 공백 없이 설계해 드립니다.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-q" onclick="toggleFaq(this)">
+            <span>Q4. 방문 전 카카오톡이나 온라인으로 먼저 물건 검토를 요청할 수 있나요?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-a">
+            네, 가능합니다. 상단·하단의 <strong>[카카오톡 오픈채팅 상담]</strong> 버튼이나 아래 <strong>[통합 상담 신청 폼]</strong>에 물건 소재지(또는 경매 사건번호)와 연락처를 남겨주시면 박문성 대표가 기초 권리관계를 사전 검토한 후 전화 또는 카톡으로 안내해 드립니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="contact-sec">
     <div class="container">
       <div class="section-title">
@@ -749,7 +968,7 @@
         <p>대구·경북 전 지역 상담 가능합니다. 내용을 남겨주시면 박문성 대표가 직접 검토 후 연락드립니다.</p>
       </div>
       <div class="form-box">
-        <form action="https://formspree.io/f/xljblkwg" method="POST">
+        <form action="https://formspree.io/f/xljblkwg" method="POST" onsubmit="return validateMainForm(this)">
           <div class="form-group">
             <label>희망 서비스 분야 선택</label>
             <select name="서비스분야">
@@ -774,6 +993,16 @@
             <label>소재지(대구·경북 시/구/군) 및 상세 문의 내용</label>
             <textarea name="상세문의내용" rows="4" placeholder="예: 대구 달서구 성서공단 내 공장 매입 및 화재보험 설계 자문 요청 / 경매 사건번호 분석 의뢰 / 결제 링크 발송 요청 등" required></textarea>
           </div>
+
+          <!-- 개인정보 수집·이용 필수 동의 체크박스 -->
+          <div class="privacy-box">
+            <label class="privacy-check">
+              <input type="checkbox" id="mainPrivacyAgree" name="개인정보수집이용동의" value="동의함" required />
+              <span>[필수] 개인정보 수집 및 이용에 동의합니다.</span>
+            </label>
+            <button type="button" class="privacy-view-btn" onclick="openPrivacyModal()">내용보기</button>
+          </div>
+
           <button type="submit" class="btn-submit">박문성 대표에게 상담 및 분석 신청하기</button>
         </form>
       </div>
@@ -786,7 +1015,12 @@
       <div>대표 공인중개사: 박문성 | 소재지: 대구광역시 동구 화랑로 37길 47 (명진빌딩) 104호</div>
       <div>연락처: 010-2062-4600 | 팩스: 0508-918-4600 | 이메일: pmsung@naver.com</div>
       <div>중개사무소 등록번호: 제27140-2026-XXXXX호 (개설등록번호 발급 후 기입)</div>
-      <div style="margin-top: 10px; font-size: 0.8rem; color: #64748b;">© 2026 Haedeun Real Estate & Asset Safety Consulting. All rights reserved.</div>
+      <div class="footer-links">
+        <button type="button" onclick="openPrivacyModal()">개인정보처리방침</button>
+        <a href="https://open.kakao.com/o/sWvsGSXi" target="_blank">카카오톡 오픈채팅 상담</a>
+        <a href="https://www.youtube.com/@박씨네보험톡" target="_blank">유튜브 박씨네 보험톡</a>
+      </div>
+      <div style="margin-top: 8px; font-size: 0.8rem; color: #64748b;">© 2026 Haedeun Real Estate & Asset Safety Consulting. All rights reserved.</div>
     </div>
   </footer>
 
@@ -797,32 +1031,69 @@
       <h3 id="modalTitle">상세 권리분석 항목</h3>
       <p id="modalDesc"></p>
       <ul class="modal-list" id="modalList"></ul>
-      <a href="#contact" onclick="closeModal()" class="btn-primary" style="width:100%; text-align:center;">이 분야 권리분석·중개 상담 신청하기</a>
+      <a href="#contact" onclick="closeModal()" class="btn-primary" style="width:100%; justify-content:center;">이 분야 권리분석·중개 상담 신청하기</a>
     </div>
   </div>
 
-  <!-- 박문성 대표 형상화 AI 로봇 실시간 상담 챗봇 위젯 -->
+  <!-- 개인정보 수집·이용 안내 및 처리방침 모달(팝업) -->
+  <div class="modal-overlay" id="privacyModal" onclick="if(event.target===this) closePrivacyModal()">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closePrivacyModal()">✕</button>
+      <h3>개인정보 수집·이용 및 처리방침 안내</h3>
+      <p>해든 공인중개사사무소는 「개인정보 보호법」에 따라 상담 접수 및 서비스 안내를 위해 아래와 같이 최소한의 개인정보를 수집·이용합니다.</p>
+      <ul class="modal-list">
+        <li><strong>수집 항목:</strong> 성함(또는 업체명), 연락처, 희망 서비스 분야, 물건 소재지 및 문의 내용</li>
+        <li><strong>수집 및 이용 목적:</strong> 부동산 중개·권리분석·화재보험 자문·AI 교육 상담 회신 및 결제 안내</li>
+        <li><strong>보유 및 이용 기간:</strong> 상담 완료 후 1년 보관 후 지체 없이 파기 (관계 법령에 보존 의무가 있는 경우 해당 기간 보관)</li>
+        <li><strong>동의 거부 권리:</strong> 귀하는 개인정보 수집·이용에 대한 동의를 거부할 권리가 있으나, 미동의 시 온라인 상담 접수가 제한됩니다.</li>
+      </ul>
+      <button type="button" onclick="closePrivacyModal()" class="btn-primary" style="width:100%; justify-content:center;">확인 및 닫기</button>
+    </div>
+  </div>
+
+  <!-- 시안 A: 부동산 전문가 컨설턴트 실시간 상담 챗봇 위젯 -->
   <button class="ai-launcher" onclick="toggleChat()" aria-label="AI 상담 열기">
     <div class="ai-avatar-badge">
+      <!-- 시안 A: 정장·안경 착용 부동산 전문가 컨설턴트 SVG -->
       <svg viewBox="0 0 100 100" width="42" height="42">
-        <rect width="100" height="100" fill="#eff6ff"/>
-        <line x1="50" y1="6" x2="50" y2="18" stroke="#1d63dc" stroke-width="4" stroke-linecap="round"/>
-        <circle cx="50" cy="6" r="4.5" fill="#d4af37"/>
-        <path d="M18 96 C18 74, 82 74, 82 96 Z" fill="#0b192e"/>
-        <polygon points="44,74 56,74 50,94" fill="#ffffff"/>
-        <polygon points="48,76 52,76 53,92 50,96 47,92" fill="#1d63dc"/>
-        <rect x="27" y="20" width="46" height="48" rx="14" fill="#f8fafc" stroke="#0b192e" stroke-width="3.5"/>
-        <path d="M27 32 C27 18, 73 18, 73 32 C64 25, 36 25, 27 32 Z" fill="#0b192e"/>
-        <rect x="32" y="36" width="15" height="11" rx="2.5" fill="#dbeafe" stroke="#0b192e" stroke-width="2.5"/>
-        <rect x="53" y="36" width="15" height="11" rx="2.5" fill="#dbeafe" stroke="#0b192e" stroke-width="2.5"/>
-        <line x1="47" y1="41" x2="53" y2="41" stroke="#0b192e" stroke-width="2.5"/>
-        <circle cx="39.5" cy="41.5" r="2.2" fill="#1d63dc"/>
-        <circle cx="60.5" cy="41.5" r="2.2" fill="#1d63dc"/>
-        <path d="M42 56 Q50 62 58 56" fill="none" stroke="#0b192e" stroke-width="2.8" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="bgGrad1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#e0f2fe"/>
+            <stop offset="100%" stop-color="#dbeafe"/>
+          </linearGradient>
+        </defs>
+        <rect width="100" height="100" fill="url(#bgGrad1)"/>
+        <!-- 은은한 빌딩 배경 실루엣 -->
+        <rect x="14" y="34" width="14" height="50" rx="2" fill="#bfdbfe"/>
+        <rect x="72" y="28" width="14" height="56" rx="2" fill="#bfdbfe"/>
+        <!-- 네이비 정장 어깨 -->
+        <path d="M18 98 C18 72, 82 72, 82 98 Z" fill="#0b192e"/>
+        <!-- 화이트 와이셔츠 칼라 -->
+        <polygon points="41,72 50,86 45,70" fill="#ffffff"/>
+        <polygon points="59,72 50,86 55,70" fill="#ffffff"/>
+        <polygon points="43,72 57,72 50,94" fill="#ffffff"/>
+        <!-- 로열블루 넥타이 & 골드 타이핀 -->
+        <polygon points="48,74 52,74 53.5,91 50,96 46.5,91" fill="#1d63dc"/>
+        <rect x="47.5" y="81" width="5" height="1.8" rx="0.8" fill="#d4af37"/>
+        <!-- 목 & 단정한 얼굴형 -->
+        <rect x="44" y="62" width="12" height="12" rx="4" fill="#f8d5b8"/>
+        <path d="M33 41 C33 25, 67 25, 67 41 C67 57, 59 65, 50 65 C41 65, 33 57, 33 41 Z" fill="#fde2cc"/>
+        <!-- 2:8 가르마 단정한 헤어 -->
+        <path d="M32 41 C31 23, 69 22, 68 41 C65 32, 54 29, 43 32 C38 33, 34 36, 32 41 Z" fill="#1e293b"/>
+        <!-- 눈썹 & 지적인 안경 -->
+        <path d="M38 38 Q42 36.5 46 38" fill="none" stroke="#1e293b" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M54 38 Q58 36.5 62 38" fill="none" stroke="#1e293b" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="36.5" y="40" width="11.5" height="7.5" rx="2" fill="rgba(255,255,255,0.45)" stroke="#0b192e" stroke-width="1.8"/>
+        <rect x="52" y="40" width="11.5" height="7.5" rx="2" fill="rgba(255,255,255,0.45)" stroke="#0b192e" stroke-width="1.8"/>
+        <line x1="48" y1="43.5" x2="52" y2="43.5" stroke="#0b192e" stroke-width="1.8"/>
+        <!-- 차분한 눈동자와 온화한 미소 -->
+        <circle cx="42.2" cy="43.8" r="1.6" fill="#0b192e"/>
+        <circle cx="57.8" cy="43.8" r="1.6" fill="#0b192e"/>
+        <path d="M45 55 Q50 58.5 55 55" fill="none" stroke="#b45309" stroke-width="1.8" stroke-linecap="round"/>
       </svg>
     </div>
     <div class="ai-launcher-text">
-      <strong>박문성 AI 상담봇</strong>
+      <strong>박문성 AI 상담실</strong>
       <span>법령·권리분석·긴급연결</span>
     </div>
   </button>
@@ -831,21 +1102,24 @@
     <div class="chat-header">
       <div class="chat-header-info">
         <div class="chat-header-avatar">
+          <!-- 시안 A: 헤더용 부동산 전문가 컨설턴트 SVG -->
           <svg viewBox="0 0 100 100" width="38" height="38">
-            <rect width="100" height="100" fill="#eff6ff"/>
-            <line x1="50" y1="6" x2="50" y2="18" stroke="#1d63dc" stroke-width="4" stroke-linecap="round"/>
-            <circle cx="50" cy="6" r="4.5" fill="#d4af37"/>
-            <path d="M18 96 C18 74, 82 74, 82 96 Z" fill="#0b192e"/>
-            <polygon points="44,74 56,74 50,94" fill="#ffffff"/>
-            <polygon points="48,76 52,76 53,92 50,96 47,92" fill="#1d63dc"/>
-            <rect x="27" y="20" width="46" height="48" rx="14" fill="#f8fafc" stroke="#0b192e" stroke-width="3.5"/>
-            <path d="M27 32 C27 18, 73 18, 73 32 C64 25, 36 25, 27 32 Z" fill="#0b192e"/>
-            <rect x="32" y="36" width="15" height="11" rx="2.5" fill="#dbeafe" stroke="#0b192e" stroke-width="2.5"/>
-            <rect x="53" y="36" width="15" height="11" rx="2.5" fill="#dbeafe" stroke="#0b192e" stroke-width="2.5"/>
-            <line x1="47" y1="41" x2="53" y2="41" stroke="#0b192e" stroke-width="2.5"/>
-            <circle cx="39.5" cy="41.5" r="2.2" fill="#1d63dc"/>
-            <circle cx="60.5" cy="41.5" r="2.2" fill="#1d63dc"/>
-            <path d="M42 56 Q50 62 58 56" fill="none" stroke="#0b192e" stroke-width="2.8" stroke-linecap="round"/>
+            <rect width="100" height="100" fill="#e0f2fe"/>
+            <rect x="14" y="34" width="14" height="50" rx="2" fill="#bfdbfe"/>
+            <rect x="72" y="28" width="14" height="56" rx="2" fill="#bfdbfe"/>
+            <path d="M18 98 C18 72, 82 72, 82 98 Z" fill="#0b192e"/>
+            <polygon points="43,72 57,72 50,94" fill="#ffffff"/>
+            <polygon points="48,74 52,74 53.5,91 50,96 46.5,91" fill="#1d63dc"/>
+            <rect x="47.5" y="81" width="5" height="1.8" rx="0.8" fill="#d4af37"/>
+            <rect x="44" y="62" width="12" height="12" rx="4" fill="#f8d5b8"/>
+            <path d="M33 41 C33 25, 67 25, 67 41 C67 57, 59 65, 50 65 C41 65, 33 57, 33 41 Z" fill="#fde2cc"/>
+            <path d="M32 41 C31 23, 69 22, 68 41 C65 32, 54 29, 43 32 C38 33, 34 36, 32 41 Z" fill="#1e293b"/>
+            <rect x="36.5" y="40" width="11.5" height="7.5" rx="2" fill="rgba(255,255,255,0.45)" stroke="#0b192e" stroke-width="1.8"/>
+            <rect x="52" y="40" width="11.5" height="7.5" rx="2" fill="rgba(255,255,255,0.45)" stroke="#0b192e" stroke-width="1.8"/>
+            <line x1="48" y1="43.5" x2="52" y2="43.5" stroke="#0b192e" stroke-width="1.8"/>
+            <circle cx="42.2" cy="43.8" r="1.6" fill="#0b192e"/>
+            <circle cx="57.8" cy="43.8" r="1.6" fill="#0b192e"/>
+            <path d="M45 55 Q50 58.5 55 55" fill="none" stroke="#b45309" stroke-width="1.8" stroke-linecap="round"/>
           </svg>
         </div>
         <div class="chat-header-title">
@@ -868,10 +1142,11 @@
     </div>
   </div>
 
-  <!-- 스마트폰 하단 고정 상담 바 -->
+  <!-- 스마트폰 하단 고정 상담 바 (전화 · 카카오톡 · 권리분석 3분할) -->
   <div class="mobile-bottom-bar">
-    <a href="tel:010-2062-4600" class="call-btn">📞 직통 전화상담</a>
-    <button type="button" onclick="toggleChat(true)" class="ai-btn">🤖 AI 로봇상담</button>
+    <a href="tel:010-2062-4600" class="call-btn">📞 직통전화</a>
+    <a href="https://open.kakao.com/o/sWvsGSXi" target="_blank" class="kakao-btn">💬 카톡상담</a>
+    <button type="button" onclick="toggleChat(true)" class="ai-btn">🏛️ AI상담실</button>
   </div>
 
   <script>
@@ -884,8 +1159,6 @@
 
     /* =====================================================================
        ★ [2. 유튜브 영상 & 채널 설정 구역]
-       - 나중에 대표님 특정 영상 ID(예: watch?v=뒤의 코드)를 넣으시면 바로 재생창으로 바뀝니다.
-       - 비워두시면(@박씨네보험톡 채널 공식 배너)가 깔끔하게 표시됩니다.
        ===================================================================== */
     const youtubeVideoId = ''; 
     const youtubeChannelUrl = 'https://www.youtube.com/@박씨네보험톡';
@@ -895,9 +1168,37 @@
     }
     document.getElementById('ytChannelBtn').href = youtubeChannelUrl;
 
+    /* =====================================================================
+       ★ [3. 카카오톡 오픈채팅 링크 설정 완료]
+       ===================================================================== */
+    const kakaoChatUrl = 'https://open.kakao.com/o/sWvsGSXi';
+
     /* 모바일 메뉴 토글 */
     function toggleMobileMenu() {
       document.getElementById('mobileDropdown').classList.toggle('open');
+    }
+
+    /* FAQ 아코디언 토글 */
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      item.classList.toggle('open');
+    }
+
+    /* 개인정보 필수 동의 검증 및 팝업 */
+    function validateMainForm(form) {
+      const chk = document.getElementById('mainPrivacyAgree');
+      if (!chk.checked) {
+        alert('[필수] 개인정보 수집 및 이용에 동의해 주셔야 상담 접수가 가능합니다.');
+        chk.focus();
+        return false;
+      }
+      return true;
+    }
+    function openPrivacyModal() {
+      document.getElementById('privacyModal').classList.add('open');
+    }
+    function closePrivacyModal() {
+      document.getElementById('privacyModal').classList.remove('open');
     }
 
     /* 주차별 주간지 뷰어 엔진 */
@@ -1021,7 +1322,7 @@
       document.getElementById('detailModal').classList.remove('open');
     }
 
-    /* 박문성 대표 시그니처 AI 로봇 상담 챗봇 엔진 */
+    /* 박문성 대표 시그니처 AI 전문가 상담 챗봇 엔진 */
     let chatInitialized = false;
     const chatBody = document.getElementById('chatBody');
 
@@ -1115,7 +1416,7 @@
 
     function showWelcomeMessage() {
       appendBotHtml(`
-        안녕하십니까! <strong>해든 공인중개사사무소 박문성 AI 어시스턴트</strong>입니다.<br><br>
+        안녕하십니까! <strong>해든 공인중개사사무소 박문성 AI 상담실</strong>입니다.<br><br>
         국토교통부·한국공인중개사협회 실무 기준과 <strong>민법·상법</strong>을 바탕으로 권리분석 및 재산 안전 리스크를 안내해 드립니다.<br>
         아래에서 상담하실 분야를 선택하시거나 질문을 입력해 주세요.
       `, true);
@@ -1134,20 +1435,29 @@
     }
 
     function showUrgentEscalation() {
-      appendUserText('🚨 개별 사안 긴급 1:1 전화 / 이메일 상담 요청');
+      appendUserText('🚨 개별 사안 긴급 1:1 전화 / 카톡 / 이메일 상담 요청');
       setTimeout(() => {
         appendBotHtml(`
           <span class="msg-law-tag" style="background:#fef2f2; color:#b91c1c;">🚨 박문성 대표 직접 1:1 긴급 연결</span><br>
           복잡한 권리관계나 시나리오 외 개별 사안은 <strong>박문성 대표가 직접 검토</strong>하여 안내해 드립니다.<br><br>
-          <strong>1. 긴급 직통 전화상담 (즉시 통화)</strong><br>
-          <a href="tel:010-2062-4600" style="display:block; margin:8px 0 12px; padding:10px; background:#1d63dc; color:#fff; text-align:center; border-radius:8px; font-weight:800;">
-            📞 010-2062-4600 바로 전화 걸기
-          </a>
+          <strong>1. 직통 전화 및 카카오톡 즉시 연결</strong><br>
+          <div style="display:flex; gap:6px; margin:8px 0 12px;">
+            <a href="tel:010-2062-4600" style="flex:1; padding:10px 6px; background:#1d63dc; color:#fff; text-align:center; border-radius:8px; font-weight:800; font-size:0.82rem;">
+              📞 전화 걸기
+            </a>
+            <a href="${kakaoChatUrl}" target="_blank" style="flex:1; padding:10px 6px; background:#fee500; color:#191919; text-align:center; border-radius:8px; font-weight:800; font-size:0.82rem;">
+              💬 카톡 오픈채팅
+            </a>
+          </div>
           <strong>2. 실시간 이메일 정밀 상담 접수</strong>
           <form class="mini-form" onsubmit="submitMiniForm(event, this)">
             <input type="text" name="성함_업체명" placeholder="성함 또는 업체명" required />
             <input type="tel" name="연락처" placeholder="회신받으실 연락처 (010-0000-0000)" required />
             <textarea name="상세문의내용" rows="3" placeholder="물건 소재지 및 궁금하신 핵심 내용을 적어주세요." required></textarea>
+            <label class="mini-privacy">
+              <input type="checkbox" name="개인정보수집이용동의" value="동의함" required />
+              <span>[필수] 개인정보 수집·이용 동의</span>
+            </label>
             <button type="submit">✉️ 박문성 대표 이메일로 즉시 발송</button>
           </form>
         `, false);
@@ -1157,7 +1467,7 @@
     function submitMiniForm(e, formEl) {
       e.preventDefault();
       const formData = new FormData(formEl);
-      formData.append('접수경로', '홈페이지 AI 로봇 챗봇 긴급상담');
+      formData.append('접수경로', '홈페이지 AI 상담실 긴급상담');
 
       fetch('https://formspree.io/f/xljblkwg', {
         method: 'POST',
@@ -1198,7 +1508,7 @@
         } else {
           appendBotHtml(`
             입력하신 <strong>"${text}"</strong> 건은 개별 사실관계와 등기부·계약 조건에 따른 정밀 검토가 필요한 사안입니다.<br><br>
-            아래에서 <strong>긴급 1:1 전화상담</strong> 또는 <strong>이메일 상담 접수</strong>를 선택해 주시면 박문성 대표가 직접 확인 후 답변드리겠습니다.
+            아래에서 <strong>직통 전화·카톡 오픈채팅</strong> 또는 <strong>이메일 상담 접수</strong>를 선택해 주시면 박문성 대표가 직접 확인 후 답변드리겠습니다.
           `, false);
           showUrgentEscalation();
         }
